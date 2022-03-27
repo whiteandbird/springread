@@ -6,6 +6,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 
 /**
+ * 实现了 BeanPostProcessor 在容器创建过程中 会把自己提前注入到 beanPostProcessor组中
  * @author derekyi
  * @date 2020/12/1
  */

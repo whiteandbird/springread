@@ -4,7 +4,7 @@ import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.BeanFactory;
 
 /**
- * 有注入能力的bean工厂  ，丰富bean工厂的能力 能在bean前后做一些事情
+ * 有注入能力的bean工厂  ，丰富bean工厂的能力 能在bean初始化前后做一些事情
  * @author derekyi
  * @date 2020/11/28
  */

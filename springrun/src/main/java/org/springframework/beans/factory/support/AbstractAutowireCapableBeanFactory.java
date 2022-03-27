@@ -280,9 +280,11 @@ public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFac
 	 * @throws Throwable
 	 */
 	protected void invokeInitMethods(String beanName, Object bean, BeanDefinition beanDefinition) throws Throwable {
+		// 先执行实现了InitializingBean接口的
 		if (bean instanceof InitializingBean) {
 			((InitializingBean) bean).afterPropertiesSet();
 		}
+		// 在执行指定了InitMethodName的方法
 		String initMethodName = beanDefinition.getInitMethodName();
 		if (StrUtil.isNotEmpty(initMethodName)) {
 			Method initMethod = ClassUtil.getPublicMethod(beanDefinition.getBeanClass(), initMethodName);

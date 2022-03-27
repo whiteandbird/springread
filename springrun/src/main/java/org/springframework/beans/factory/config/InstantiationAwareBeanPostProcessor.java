@@ -4,13 +4,15 @@ import org.springframework.beans.BeansException;
 import org.springframework.beans.PropertyValues;
 
 /**
+ * InstantiationAwareBeanpostProcessor是个特殊的postProcessor  大部分的执行时机是在填充属性之后  而这个却在bean实例化前后
+ * 在BeanPostProcessor基础上增加了俩个接口 实现了在实例化前后进行操作的功能
  * @author derekyi
  * @date 2020/12/6
  */
 public interface InstantiationAwareBeanPostProcessor extends BeanPostProcessor {
 
 	/**
-	 * 在bean实例化之前执行
+	 * 在bean实例化之前执行 实例化之前而不是初始化之前
 	 *
 	 * @param beanClass
 	 * @param beanName

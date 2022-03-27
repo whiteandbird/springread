@@ -33,6 +33,10 @@ public class ClassPathXmlApplicationContext extends AbstractXmlApplicationContex
 		refresh();
 	}
 
+	/**
+	 * 实现了 应用上下文的查找
+	 * @return
+	 */
 	protected String[] getConfigLocations() {
 		return this.configLocations;
 	}

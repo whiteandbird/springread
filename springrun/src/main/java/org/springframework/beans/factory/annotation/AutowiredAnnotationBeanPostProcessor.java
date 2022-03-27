@@ -14,7 +14,7 @@ import java.lang.reflect.Field;
 
 /**
  * 处理@Autowired和@Value注解的BeanPostProcessor
- *
+ *  bean实例化前后进行操作
  * @author derekyi
  * @date 2020/12/27
  */
@@ -83,6 +83,13 @@ public class AutowiredAnnotationBeanPostProcessor implements InstantiationAwareB
 		return true;
 	}
 
+	/**
+	 * 这个不做操作吗
+	 * @param bean
+	 * @param beanName
+	 * @return
+	 * @throws BeansException
+	 */
 	@Override
 	public Object postProcessBeforeInitialization(Object bean, String beanName) throws BeansException {
 		return null;

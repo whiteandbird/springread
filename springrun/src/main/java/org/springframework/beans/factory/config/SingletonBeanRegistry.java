@@ -9,7 +9,7 @@ package org.springframework.beans.factory.config;
 public interface SingletonBeanRegistry {
 
 	/**
-	 * 获取单例实例
+	 * 获取单例实例 跟getBean有区别的
 	 * @param beanName
 	 * @return
 	 */

@@ -3,6 +3,7 @@ package org.springframework.beans.factory.annotation;
 import java.lang.annotation.*;
 
 /**
+ * 指定名字
  * @author derekyi
  * @date 2020/12/27
  */

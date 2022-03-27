@@ -9,6 +9,10 @@ import org.springframework.beans.factory.xml.XmlBeanDefinitionReader;
  */
 public abstract class AbstractXmlApplicationContext extends AbstractRefreshableApplicationContext {
 
+	/**
+	 * 实现了父类的loadBeanDefintion
+	 * @param beanFactory
+	 */
 	protected void loadBeanDefinitions(DefaultListableBeanFactory beanFactory) {
 		XmlBeanDefinitionReader beanDefinitionReader = new XmlBeanDefinitionReader(beanFactory, this);
 		String[] configLocations = getConfigLocations();

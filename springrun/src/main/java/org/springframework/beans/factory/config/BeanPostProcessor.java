@@ -11,7 +11,7 @@ import org.springframework.beans.BeansException;
 public interface BeanPostProcessor {
 
 	/**
-	 * 在bean执行初始化方法之前执行此方法
+	 * 在bean执行初始化方法(initMethon方法等 或者 InitializeBean)之前执行此方法  填充属性之后
 	 *
 	 * @param bean
 	 * @param beanName

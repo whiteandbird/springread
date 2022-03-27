@@ -9,6 +9,7 @@ import org.springframework.beans.factory.config.BeanDefinition;
 import java.lang.reflect.Method;
 
 /**
+ * 是DispoableBean的适配器 主要针对于自定义销毁方法的
  * @author derekyi
  * @date 2020/11/29
  */

@@ -2,7 +2,7 @@ package org.springframework.beans.factory.config;
 
 /**
  * 一个bean对另一个bean的引用
- *
+ * bean的属性里面存的另一个bean的引用
  * @author derekyi
  * @date 2020/11/24
  */

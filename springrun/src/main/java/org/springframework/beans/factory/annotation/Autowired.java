@@ -6,6 +6,7 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
+ * 只是一个注解
  * @author derekyi
  * @date 2020/12/27
  */

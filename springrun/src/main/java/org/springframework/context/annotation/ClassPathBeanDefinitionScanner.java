@@ -38,6 +38,7 @@ public class ClassPathBeanDefinitionScanner extends ClassPathScanningCandidateCo
 			}
 		}
 
+		// 最后需要注册一个处理Autowired和Value的BeanPostProcessor
 		//注册处理@Autowired和@Value注解的BeanPostProcessor
 		registry.registerBeanDefinition(AUTOWIRED_ANNOTATION_PROCESSOR_BEAN_NAME, new BeanDefinition(AutowiredAnnotationBeanPostProcessor.class));
 	}

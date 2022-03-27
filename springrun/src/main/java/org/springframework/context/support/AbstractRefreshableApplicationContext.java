@@ -13,7 +13,8 @@ public abstract class AbstractRefreshableApplicationContext extends AbstractAppl
 
 	/**
 	 * 创建beanFactory并加载BeanDefinition
-	 *
+	 * 实现了了父类的refreshBeanFactory   但是留下了一个loadBeanDefinition交给子类自己去是实现
+	 * loadDefinition有多种实现 比如xml 和 javaConfig的
 	 * @throws BeansException
 	 */
 	protected final void refreshBeanFactory() throws BeansException {
@@ -33,7 +34,7 @@ public abstract class AbstractRefreshableApplicationContext extends AbstractAppl
 
 	/**
 	 * 加载BeanDefinition
-	 *
+	 * 加载beanDefinition交给子类自己去实现   因为有xml 和 javaconfig两种形式
 	 * @param beanFactory
 	 * @throws BeansException
 	 */
